@@ -1,0 +1,29 @@
+#CharacterInfo{
+    animation-name: cardAnimation;
+    animation-duration: 2s;
+}
+
+@keyframes cardAnimation{
+    from {opacity: 0;}
+    to {opacity: 1}
+}
+
+.card-img-top{
+    height: 25rem;
+}
+
+.card{
+    border-color: black !important;
+    border-style: solid;
+    border-width: 2px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list-group-item
+{
+    height: 70px;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

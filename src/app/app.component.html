@@ -1,29 +1,43 @@
 <div class='container'>
-  <h1>Breaking Bad- S00199690 Ryan McDonald</h1>
+  <h1>Breaking Bad Characters</h1>
+
   <form>
     <div class="form-group">
-      <input type='text' name='movie-name' class="form-control" #moviename placeholder='Enter Movie Name'>
+      <input type='text' name='character-name' class="form-control" #charactername placeholder='Enter Character Name'>
     </div>
-    <button (click)="getMovieDetails(moviename.value)" type="submit" class='btn btn-primary'>Get Movie
+
+    <button (click)="getCharacterDetails(charactername.value)" type="submit" class='btn btn-primary'>Get Character
       Details</button>
+
+    <button (click)="getAllDetails()" type="submit" class='btn btn-info'>All
+      Characters</button>
   </form>
 
-  <div class="row bg-light  mt-4  p-4" *ngIf="movieData">
-    <div class="col-sm-4">
-      <div>
-        <h3>{{movieData.Error}} </h3>
-      </div>
-      <div *ngIf="movieData.Title">
-        <img src="{{movieData.Poster}}">
-      </div>
+  <div class='row'>
+    <div class="card text-white bg-secondary border-dark mb-3" style="width: 25rem;"
+      *ngFor="let character of characterData" id="CharacterInfo">
+      <img class="card-img-top border-dark" src="{{character.img}}" alt="{{character.name}}">
+
+      <ul class="list-group list-group-flush border-dark">
+
+        <li class="list-group-item bg-dark">
+          <h4>{{character.name}} </h4>
+        </li>
+        <li class="list-group-item bg-dark">
+          <p>Portrayed by : {{character.portrayed}} </p>
+        </li>
+        <li class="list-group-item bg-dark">
+          <p>Occupation: {{character.occupation}}</p>
+        </li>
+        <li class="list-group-item bg-dark">
+          <p>Status: {{character.status}}</p>
+        </li>
+      </ul>
     </div>
 
-    <div class="col-sm-8">
-      <div *ngIf="movieData.Title">
-        <h1>{{movieData.Title}} </h1>
-        <h2>Directed by : {{movieData.Director}} </h2>
-      </div>
-    </div>
   </div>
 
+  <div class="container">
+    <h1>Github Link</h1>
+  </div>
 </div>
