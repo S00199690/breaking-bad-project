@@ -1,16 +1,25 @@
 <div class='container'>
   <h1>Breaking Bad Characters</h1>
-
+  <div class="jumbotron">
+    <u>
+      <h2>Welcome</h2>
+    </u>
+    <p id="welcomeInfo">Search using the function above and click get character data for a specific character
+      or click the all characters button to display all the characters available using the
+      Breaking Bad API
+    </p>
+  </div>
   <form>
     <div class="form-group">
       <input type='text' name='character-name' class="form-control" #charactername placeholder='Enter Character Name'>
     </div>
+    <div class="flex-parent jc-center">
+      <button (click)="getCharacterDetails(charactername.value)" type="submit" class='btn btn-primary'>Get Character
+        Details</button>
 
-    <button (click)="getCharacterDetails(charactername.value)" type="submit" class='btn btn-primary'>Get Character
-      Details</button>
-
-    <button (click)="getAllDetails()" type="submit" class='btn btn-info'>All
-      Characters</button>
+      <button (click)="getAllDetails()" type="submit" class='btn btn-info'>All
+        Characters</button>
+    </div>
   </form>
 
   <div class='row'>
@@ -37,7 +46,8 @@
 
   </div>
 
-  <div class="container">
-    <h1>Github Link</h1>
-  </div>
+  <h1>Github Link</h1>
+  <a class="github" href="https://github.com/S00199690/breaking-bad-project"><img class="center"
+      src="https://www.flaticon.com/svg/vstatic/svg/25/25231.svg?token=exp=1619907548~hmac=40c33e9adb6c6150d5e60f52c1e10d02">
+  </a>
 </div>
