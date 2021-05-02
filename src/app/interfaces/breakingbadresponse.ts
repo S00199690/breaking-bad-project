@@ -1,3 +1,5 @@
+import { ThrowStmt } from "@angular/compiler";
+
 export interface BreakingBadResponse {
     name: string;
     occupation: string;
@@ -6,3 +8,6 @@ export interface BreakingBadResponse {
     status: string;
     Error: string;
 }
+
+
+

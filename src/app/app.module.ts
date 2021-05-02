@@ -5,13 +5,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BreakingBadApiService } from './services/breaking-bad-api.service';
 
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "../environments/environment";
+import { ReviewlistComponent } from './reviewlist/reviewlist.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ReviewlistComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

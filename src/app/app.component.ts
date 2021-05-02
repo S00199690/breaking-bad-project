@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BreakingBadApiService } from './services/breaking-bad-api.service';
-import { BreakingBadResponse } from './breakingbadresponse';
+import { BreakingBadResponse } from './interfaces/breakingbadresponse';
 
 @Component({
   selector: 'app-root',
@@ -35,7 +35,7 @@ export class AppComponent {
       error => this.errorMessage = <any>error
     );
     return false;
-    }
+  }
 
 
 
