@@ -9,11 +9,13 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
 import { ReviewlistComponent } from './reviewlist/reviewlist.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReviewlistComponent
+    ReviewlistComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

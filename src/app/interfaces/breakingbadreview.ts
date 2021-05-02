@@ -1,9 +1,12 @@
+import { stringify } from 'querystring';
+
+
 export interface BreakingBadReview {
     Name: string;
     Review: string;
 }
 
-export class Review {
+export class Reviews {
     Name: string;
     Review: string;
 

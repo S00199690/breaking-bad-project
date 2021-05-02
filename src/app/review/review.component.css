@@ -1,0 +1,8 @@
+#reviews{
+    border-color: black !important;
+    border-style: dotted;
+    border-width: 2px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

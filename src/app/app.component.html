@@ -6,7 +6,7 @@
     </u>
     <p id="welcomeInfo">Search using the function below and click get character data for a specific character
       or click the all characters button to display all the characters available using the
-      Breaking Bad API
+      Breaking Bad API. You can also leave a review at the bottom.
     </p>
   </div>
   <form>
@@ -45,27 +45,7 @@
     </div>
 
   </div>
-  <form id="review">
-    <fieldset>
-      <legend>Leave a Review of Breaking Bad</legend>
-      <div class="form-group">
-        <label for="name">Name
-        </label>
-        <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
-      </div>
-      <div class="form-group">
-        <label for="review">Description of Review<sup>*Max 200 words</sup>
-        </label>
-        <textarea class="form-control" id="reviewDescription" rows="4"></textarea>
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-        <label class="form-check-label" for="exampleCheck1">*I agree if my post goes against guidelines it can be
-          removed</label>
-      </div>
-      <button type="submit" class="btn btn-primary" id="reviewSubmit">Submit</button>
-    </fieldset>
-  </form>
+  <app-reviewlist></app-reviewlist>
   <h1>Github Link</h1>
   <a class="github" href="https://github.com/S00199690/breaking-bad-project"><img class="center"
       src="https://www.flaticon.com/svg/vstatic/svg/25/25231.svg?token=exp=1619907548~hmac=40c33e9adb6c6150d5e60f52c1e10d02">
