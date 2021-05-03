@@ -2,21 +2,21 @@
     <fieldset>
         <legend>Leave a Review of Breaking Bad</legend>
         <div class="form-group">
-            <label for="name">Name:
+            <label for="name" id="reviewLabel">Name:
             </label>
             <input type="Name" class="form-control" id="name" placeholder="Enter Name" #Name>
         </div>
         <div class="form-group">
-            <label for="review">Description of Review:<sup>*Max 200 words</sup>
+            <label for="review" id="reviewLabel">Description of Review:<sup>*Max 200 words</sup>
             </label>
             <textarea class="form-control" name="descriptionReview" placeholder="Enter Description" rows="4"
                 #Review></textarea>
         </div>
         <div class="form-check">
-            <label class="form-check-label" id="noteAgreement">*Note that by submitting your review you agree that
-                if your post goes against guidelines it
-                can be
-                removed</label>
+            <label class="form-check-label" id="noteAgreement"><u>*Note that by submitting your review you agree that
+                    if your post goes against guidelines it
+                    can be
+                    removed</u></label>
         </div>
         <div class="flex-parent jc-center">
             <button type="submit" id="reviewSubmit" class="btn btn-primary"
@@ -24,6 +24,7 @@
         </div>
     </fieldset>
 </form>
+<hr>
 <legend>All Reviews</legend>
 <div class="container">
     <app-review *ngFor="let reviewData of reviewData" [reviewData]="reviewData"></app-review>

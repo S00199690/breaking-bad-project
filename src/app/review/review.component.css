@@ -1,8 +1,45 @@
 #reviews{
     border-color: black !important;
-    border-style: dotted;
-    border-width: 2px;
+    border-style:dashed;
+    border-width: 5px;
     margin-top: 20px;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reviewName{
+    color:white;
+    font-style: italic;
+}
+
+#reviewDescription{
+    font-weight: 800;
+}
+
+#smallButton{
+    height: 50px;
+    width: 100px;
+    transform: translate(166px,2px);
+    
+}
+
+@media screen and (max-width: 1200px) {
+    #smallButton {height: 50px;
+    width: 100px;
+    transform: translate(121%,2px);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #smallButton {height: 50px;
+    width: 100px;
+    transform: translate(61%,2px);
+    }
+}
+
+@media screen and (max-width: 766px) {
+    #smallButton {height: 50px;
+    width: 100px;
+    transform: translate(16%,2px);
+    }
 }
